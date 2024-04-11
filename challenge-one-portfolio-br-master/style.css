@@ -1,0 +1,209 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+section.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin:15px;
+}
+
+.menu__item__horizontal{
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin-right: auto;
+    
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    grid-gap: 32px;
+   
+}
+
+/*Sessão Title*/
+
+section.title{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #F2E7DC;
+
+}
+
+.title__profile {
+    width: 45%;
+    height: auto;
+}
+
+.title__div {
+    display: flex;
+    align-items: center;
+}
+
+.title__network {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.title__network__item {
+    margin-right: 10px;
+}
+
+/*Sessão About*/
+
+section.about{
+    background-color: #A9D9D0;
+    padding: 32px;
+}
+
+.about__title{
+    margin-top: 0%;   
+}
+
+.about__paragraph {
+    width: 70%;
+}
+
+/*Sessão Habilidades*/
+
+section.skills{
+    padding: 32px;
+    text-align: center;
+}
+
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    
+}
+
+.skills__box{
+    background-color: #F2E7DC;
+    background-color: #F2E7DC;
+    padding: 32px;
+    align-items: center;
+    border-radius: 540px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    text-align: center;
+    padding: 50px;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hobbies__box{
+    background-color: #F2E7DC;
+    padding: 32px;
+    align-items: center;
+    border-radius: 540px;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+    text-align: center;
+    background-color: #A9D9D0;
+    padding: 50px;
+}
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;       
+}
+
+.academic__courses__box{
+    background-color: white;
+    flex: 1 1 250px; /* Permite que os itens tenham largura mínima de 250px */
+    margin: 0 10px;
+    padding: 50px;
+}
+
+.academic__courses__item__img img {
+    max-width: 80px;
+    height: auto;
+}
+
+/*Contato*/
+
+section.formcontato{
+    background-color: #F2E7DC;
+    display: flex;
+    padding: 5%;
+}
+
+.formcontato__contacto {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formcontato__text {
+    max-width: 600px;
+    margin-left: 20px;
+    
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+}
+   
+.formcontato__img{
+    width: 100%;
+    height: auto;
+}
+/*footeer*/
+
+section.footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
